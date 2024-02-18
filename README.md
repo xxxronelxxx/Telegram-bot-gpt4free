@@ -75,4 +75,6 @@ g4f.Provider.Raycast\
 g4f.Provider.Theb\
 g4f.Provider.GeekGpt\
 
-Доступный список всех моделей: https://github.com/xtekky/gpt4free?tab=readme-ov-file#gpt-4
+Доступный список всех моделей: https://github.com/xtekky/gpt4free?tab=readme-ov-file#gpt-4\
+https://github.com/xxxronelxxx/gpt4free
+
