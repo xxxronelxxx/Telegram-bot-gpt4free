@@ -11,17 +11,11 @@ bot = Bot(token=API_TOKEN)
 dp = Dispatcher(bot)
 
 Далее сразу нужно создать кнопку в меню для очистки истории диалога, чтобы потом не возвращаться к этому. Пишем команду /mybots. Выбираем свой бот. Нажимаем Edit bot, далее Edit commands. Затем пишите clear — очистка истории сообщений. Теперь при написании команды или выборе в меню /clear будет очищаться диалог с пользователем.
-Для работы на винде, например в IDE для тестов, достаточно запустить IDE, создать окружение, клонировать код с гитхаба или вручную скопировать в папку, далее ввести в терминале pip install -r requirements.txt и заменить API_TOKEN на токен вашего телеграм-бота, который вы только что получили.
-На Ubuntu вам придется создать папку; я для удобства использую winSCP, вы можете использовать что удобно, в том числе клонировать с гита и перейти в папку командой.
 
 Запускаем Putty и подключаемся к серверу либо из терминала:
 
-git clone https://github.com/LORD-A-B/Telegram-bot-gpt4free.git
+git clone https://github.com/xxxronelxxx/Telegram-bot-gpt4free.git
 cd Telegram-bot-gpt4free
-
-Либо создаем папку в WinSCP, копируем в нее main.py и requirements.txt. А затем переходим туда в консоли командой:
-
-cd названиепапки
 
 Обновляем список пакетов:
 
@@ -69,3 +63,15 @@ sudo systemctl enable tgbot.service
 Ваш бот готов, чтобы проверить его статус, используйте команду:
 
 sudo systemctl status tgbot.service
+
+### Список моделей
+GPT-4
+g4f.Provider.Bing
+g4f.Provider.FreeChatgpt
+g4f.Provider.Liaobots
+g4f.Provider.OpenaiChat
+g4f.Provider.Raycast
+g4f.Provider.Theb
+g4f.Provider.GeekGpt
+
+Доступный список всех моделей: https://github.com/xtekky/gpt4free?tab=readme-ov-file#gpt-4
