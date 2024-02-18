@@ -44,6 +44,7 @@ pip install -r requirements.txt
 Теперь нужно сделать так, чтобы бот автоматически запускался и был активен при старте сервера. Идем в папку /etc/systemd/system/ и создаем любым удобным вам образом, я рекомендую через winSCP. Файл tgbot.service, в нем пишем:
 
 [Unit]
+
 Description=My Telegram bot
 
 [Service]
