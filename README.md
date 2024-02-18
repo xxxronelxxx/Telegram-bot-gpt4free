@@ -44,34 +44,35 @@ pip install -r requirements.txt
 Теперь нужно сделать так, чтобы бот автоматически запускался и был активен при старте сервера. Идем в папку /etc/systemd/system/ и создаем любым удобным вам образом, я рекомендую через winSCP. Файл tgbot.service, в нем пишем:
 
 [Unit]\
-Description=My Telegram bot\
+Description=My Telegram bot
 
 [Service]\
 WorkingDirectory=/tgbot/\
 User=ИМЯ ПОЛЬЗОВАТЕЛЯ ЗАМЕНИТЕ НА СВОЕ\
-ExecStart=/tgbot/venv/bin/python3 /tgbot/main.py\
+ExecStart=/tgbot/venv/bin/python3 /tgbot/main.py
 
-[Install]
+[Install]\
 WantedBy=multi-user.target
+
 Замените в тексте имя пользователя на свое, а также tgbot замените на вашу директорию с папкой.
 
 Далее используйте следующие команды:
 
-sudo systemctl daemon-reload
-sudo systemctl start tgbot.service
-sudo systemctl enable tgbot.service
+sudo systemctl daemon-reload\
+sudo systemctl start tgbot.service\
+sudo systemctl enable tgbot.service\
 Ваш бот готов, чтобы проверить его статус, используйте команду:
 
 sudo systemctl status tgbot.service
 
 ### Список моделей
-GPT-4
-g4f.Provider.Bing
-g4f.Provider.FreeChatgpt
-g4f.Provider.Liaobots
-g4f.Provider.OpenaiChat
-g4f.Provider.Raycast
-g4f.Provider.Theb
-g4f.Provider.GeekGpt
+GPT-4\
+g4f.Provider.Bing\
+g4f.Provider.FreeChatgpt\
+g4f.Provider.Liaobots\
+g4f.Provider.OpenaiChat\
+g4f.Provider.Raycast\
+g4f.Provider.Theb\
+g4f.Provider.GeekGpt\
 
 Доступный список всех моделей: https://github.com/xtekky/gpt4free?tab=readme-ov-file#gpt-4
